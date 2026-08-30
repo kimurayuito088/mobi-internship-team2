@@ -1,0 +1,241 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 16px;
+  background-color: #1976d2;
+  color: white;
+}
+
+.headerTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.headerSubtext {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #e3f2fd;
+}
+
+.progressDot,
+.progressDotActive {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbdefb;
+}
+
+.progressDotActive {
+  background-color: #1976d2;
+}
+
+.body {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.historyItem {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.historyCheck {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.questionText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.choiceList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choiceButton {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  background-color: white;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.choiceButton:hover:not(:disabled) {
+  background-color: #e3f2fd;
+}
+
+.choiceButton:active:not(:disabled) {
+  background-color: #bbdefb;
+}
+
+.choiceButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.confirmTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.summaryBox {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+
+.detailField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.detailLabel {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detailOptional {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+
+.detailTextarea {
+  width: 100%;
+  min-height: 96px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.detailTextarea:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.detailTextarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.confirmActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryButton,
+.secondaryButton {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.primaryButton {
+  background-color: #1976d2;
+  color: white;
+}
+
+.primaryButton:hover:not(:disabled) {
+  background-color: #1565c0;
+}
+
+.primaryButton:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+.secondaryButton:hover:not(:disabled) {
+  background-color: #f5f5f5;
+}
+
+.secondaryButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading,
+.errorBox {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.loading {
+  color: #666;
+  font-size: 16px;
+}
+
+.errorMessage {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 16px;
+}

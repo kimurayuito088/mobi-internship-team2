@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #1976d2;
+  color: white;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headerActions [class*="text"] {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.closedArea {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+}
+
+.closedMessage {
+  padding: 16px;
+  text-align: center;
+  color: #666;
+}
